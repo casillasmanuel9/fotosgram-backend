@@ -29,8 +29,8 @@ userRoutes.post('/login', (req, res) => {
                 avatar: userDB.avatar
             });
             return res.json({
-                ok: false,
-                toke: tokenUsuario
+                ok: true,
+                token: tokenUsuario
             });
         }
         else {

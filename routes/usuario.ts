@@ -29,8 +29,8 @@ userRoutes.post('/login', (req: Request, res: Response) => {
             })
 
             return res.json({
-                ok: false,
-                toke: tokenUsuario
+                ok: true,
+                token: tokenUsuario
             });
         }else {
             return res.json({
